@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Calendar</title>
+    <svg display="none">
+        <symbol id="arrow" viewBox="0 0 8 12">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.4L6.48649 0L0 6L6.48649 12L8 10.6L3.02703 6L8 1.4Z"
+                fill="white" />
+        </symbol>
+    </svg>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calendar">
+            <div class="calendar__head">
+                <button class="calendar__btn">
+                    <svg class="arrow">
+                        <use xlink:href="#arrow">
+                        </use>
+                    </svg>
+                </button>
+                <div class="calendar__title">Январь</div>
+                <button class="calendar__btn calendar__btn--right">
+                    <svg class="arrow-right">
+                        <use xlink:href="#arrow">
+                        </use>
+                    </svg>
+                </button>
+            </div>
+            <div class="calendar__body">
+                <div class="calendar__body-line">
+                    <button class="calendar__day">1</button>
+                    <button class="calendar__day calendar__day_active _start">2</button>
+                    <button class="calendar__day calendar__day_active">3</button>
+                    <button class="calendar__day calendar__day_active">4</button>
+                    <button class="calendar__day calendar__day_active _end">5</button>
+                    <button class="calendar__day calendar__day--active calendar__start calendar__end">6</button>
+                    <button class="calendar__day">7</button>
+                </div>
+                <div class="calendar__body-line">
+                    <button class="calendar__day">8</button>
+                    <button class="calendar__day">9</button>
+                    <button class="calendar__day">10</button>
+                    <button class="calendar__day">11</button>
+                    <button class="calendar__day">12</button>
+                    <button class="calendar__day">13</button>
+                    <button class="calendar__day">14</button>
+                </div>
+                <div class="calendar__body-line">
+                    <button class="calendar__day">15</button>
+                    <button class="calendar__day">16</button>
+                    <button class="calendar__day">17</button>
+                    <button class="calendar__day">18</button>
+                    <button class="calendar__day">19</button>
+                    <button class="calendar__day">20</button>
+                    <button class="calendar__day">21</button>
+                </div>
+                <div class="calendar__body-line">
+                    <button class="calendar__day">22</button>
+                    <button class="calendar__day">23</button>
+                    <button class="calendar__day">24</button>
+                    <button class="calendar__day">25</button>
+                    <button class="calendar__day">26</button>
+                    <button class="calendar__day">27</button>
+                </div>
+                <div class="calendar__body-line">
+                    <button class="calendar__day">28</button>
+                    <button class="calendar__day">29</button>
+                    <button class="calendar__day">30</button>
+                    <button class="calendar__day">1</button>
+                    <button class="calendar__day">2</button>
+                    <button class="calendar__day">3</button>
+                    <button class="calendar__day">4</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
