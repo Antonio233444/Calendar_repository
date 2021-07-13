@@ -1,4 +1,4 @@
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,18 +11,23 @@ body {
 
 :root {
     --main-bg: rgba(19, 20, 23, 0.9);
+    --button-bg: #2D9CDB;
 
 }
 
-.calendar__day._active{
-
+.calendar__day_active_start:active{
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(19, 20, 23, 0.1);
+    border-radius: 18px;
+    background-color: var(--button-bg);
 }
 
-.calendar__day._start{
+.calendar__day_start{
     
 }
 
-.calendar__day._start._end{
+.calendar__day_start_end{
     
 }
 
@@ -43,7 +48,7 @@ body {
     height: 284px;
     background: var(--main-bg);
     border-radius: 6px;
-    padding: 21px 14px 14px 18px;
+    padding: 21px 14px 18px 14px;
 }
 
 .calendar__head {
@@ -57,8 +62,7 @@ body {
 }
 
 .calendar__body-line {
-    /* display: flex;
-    justify-content: space-between; */
+
 }
 
 .calendar__day {
@@ -69,11 +73,18 @@ body {
     font-size: 12px;
     line-height: 24px;
     font-weight: 500;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right:  11px;
 }
+
 
 .calendar__btn {
     outline: none;
     border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .arrow {
@@ -84,9 +95,6 @@ body {
 
 .arrow-right {
     transform: rotate(180deg);
-    width: 8px;
-    height: 12px;
-    background-color: rgba(19, 20, 23, 0.9);
 }
 
 
